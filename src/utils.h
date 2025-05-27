@@ -46,6 +46,14 @@ enum GameState {
 #define DIM_ROUND 10
 #define TIME_ROUND 30000 // ms
 
+// INITIALIZATIONS:
+
+// lcd
+LiquidCrystal lcd(lcd_RS, lcd_E, lcd_D4, lcd_D5, lcd_D6, lcd_D7);
+
+// state
+GameState state = INTRO;
+
 // ADDITIONAL VARIABLES:
 
 // questions
